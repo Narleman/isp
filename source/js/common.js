@@ -1,84 +1,39 @@
-// -----------------  Слайдера --------------------
-
-const Sliders = {
-  INFORM: {
-    ELEMENT: $('.inform-slider'),
-    SETTINGS: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-      nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-      dotsClass: "baner-slider__dots",
-      responsive: [{
-          breakpoint: 1150,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-          },
-        },
-      ],
-    },
-    //BREAKPOINT: 768,
-    //CLASSNAME: 'inform-slider--flex',
-  },
-}
-
-
-function initialazeSlickSlider(slider) {
-  const {
-    BREAKPOINT,
-    SETTINGS,
-    ELEMENT
-  } = slider;
-  (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
-}
-
-function toggleSlider(slider) {
-  const {
-    BREAKPOINT,
-    ELEMENT,
-    SETTINGS
-  } = slider;
-  document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
-  document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
-}
-
-function toggleExtraClass(slider) {
-  const {
-    BREAKPOINT,
-    ELEMENT,
-    CLASSNAME
-  } = slider;
-  document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
-  document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
-}
-
-initialazeSlickSlider(Sliders.INFORM);
-initialazeSlickSlider(Sliders.NAVBAR);
-initialazeSlickSlider(Sliders.FIRST_SLIDER);
-initialazeSlickSlider(Sliders.BRAND_SLIDER);
-initialazeSlickSlider(Sliders.HOT_SLIDER);
-initialazeSlickSlider(Sliders.LIDERS_SLIDER);
-initialazeSlickSlider(Sliders.NOVELTY_SLIDER);
-initialazeSlickSlider(Sliders.PROD_SLIDER);
-initialazeSlickSlider(Sliders.NAV_SLIDER);
-
-window.addEventListener('resize', () => {
-  toggleSlider(Sliders.INFORM);
-  toggleExtraClass(Sliders.INFORM);
+$(".catalog__menu-btn").on("click", function () {
+  $(this).toggleClass("active");
+  $(".catalog__menu-list").toggleClass("active");
+  $(".overlay").toggleClass("active");
 });
 
+$(".overlay,.mobile__menu-close").on("click", function () {
+  $(".overlay").removeClass("active");
+  $(".catalog__menu-btn").removeClass("active");
+  $(".catalog__menu-list").removeClass("active");
+  $(".mobile__menu").removeClass("active");
+});
+
+$(".mobile__menu-btn").on("click", function () {
+  $(".mobile__menu").toggleClass("active");
+  $(".overlay").toggleClass("active");
+});
+
+// -----------------  Слайдера --------------------
 
 
+var swiperMain = new Swiper('.swiper-container.main-slider', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  effect: 'coverflow',
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 3,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 40,
+    modifier: 15,
+    slideShadows: true,
+  }
+});
 
 
 
@@ -133,20 +88,20 @@ $(function () {
   })();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-  // --------Burger menu---------
-  let burgerCtr = document.querySelector("#burger-menu");
-  let menuCtr = document.querySelector("#mobile-menu");
-  let body = document.querySelector("body");
-  burgerCtr.addEventListener("click", function () {
-    this.classList.toggle("active");
-    menuCtr.classList.toggle("show_mobile_menu");
-    body.classList.toggle("lock");
-  });
-  // --------Burger menu END---------
+//   // --------Burger menu---------
+//   let burgerCtr = document.querySelector("#burger-menu");
+//   let menuCtr = document.querySelector("#mobile-menu");
+//   let body = document.querySelector("body");
+//   burgerCtr.addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     menuCtr.classList.toggle("show_mobile_menu");
+//     body.classList.toggle("lock");
+//   });
+//   // --------Burger menu END---------
 
-})
+// })
 
 // ----------------- Аккордион --------------------
 /**

@@ -81,7 +81,7 @@ gulp.task("raster images", () => {
 });
 
 gulp.task("webp", () => {
-  return gulp.src("build/img/*.{png,jpg,jpeg}")
+  return gulp.src("build/img/**/*.{png,jpg,jpeg}")
     .pipe(webp({
       quality: 90
     }))

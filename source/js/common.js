@@ -16,11 +16,22 @@ $(".mobile__menu-btn").on("click", function () {
   $(".overlay").toggleClass("active");
 });
 
+
+/** Code By Webdevtrick ( https://webdevtrick.com )  **/
+$('.custom-input').on('focusin', function () {
+  $(this).parent().find('.custom-input__label').addClass('active');
+});
+
+$('.custom-input').on('focusout', function () {
+  if (!this.value) {
+    $(this).parent().find('.custom-input__label').removeClass('active');
+  }
+});
+
 // -----------------  Слайдера --------------------
 
 
 var swiperMain = new Swiper('.swiper-container.main-slider', {
-  pagination: '.swiper-pagination',
   paginationClickable: true,
   effect: 'coverflow',
   loop: true,
@@ -32,11 +43,106 @@ var swiperMain = new Swiper('.swiper-container.main-slider', {
     depth: 40,
     modifier: 15,
     slideShadows: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+
+var aboutUs = new Swiper('.swiper-container.about-us__slider', {
+  paginationClickable: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+
+var newsArticle = new Swiper('.swiper-container.news-article__slider', {
+  paginationClickable: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 100,
+  navigation: {
+    nextEl: '.news-article-next',
+    prevEl: '.news-article-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+
+
+
+
+var freshNews = new Swiper('.swiper-container.fresh-news__slider', {
+  paginationClickable: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: true,
+    },
+    // when window width is >= 640px
+    575: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      centeredSlides: false,
+    }
   }
 });
 
 
 
+var productSliderNav = new Swiper(".product__slider-nav", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: "vertical",
+  breakpoints: {
+    320: {
+      direction: "horizontal",
+    },
+    // when window width is >= 640px
+    788: {
+      direction: "vertical",
+    }
+  }
+});
+var productSliderMain = new Swiper(".product__slider-main", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: productSliderNav,
+  },
+});
 
 
 
@@ -239,5 +345,5 @@ var $tabs = function (target) {
   }
 
 };
-
+$tabs('.tabs');
 //tabs

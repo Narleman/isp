@@ -36,14 +36,9 @@
    &__link {
    }
 }
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
 
 .info-row {
+   margin-top: -40px;
    &__inner {
       width: 100%;
       max-width: 982px;
@@ -92,8 +87,7 @@
       justify-content: space-between;
    }
 }
-.container {
-}
+
 .cart {
    width: 100%;
    max-width: 386px;
@@ -102,10 +96,12 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   &.news {
+      height: 474px;
+   }
    &__image {
       width: 100%;
       max-width: 386px;
-      margin-bottom: 25px;
       img {
          object-fit: cover;
       }
@@ -117,8 +113,7 @@
       line-height: 20px;
       text-transform: uppercase;
       position: relative;
-      margin-bottom: 20px;
-      margin-left: 30px;
+      margin: 20px 30px;
       &::before {
          content: "";
          width: 4px;
@@ -150,7 +145,7 @@
          background-color: rgba(64, 64, 66, 0.7);
          display: block;
          position: absolute;
-         left: -10px;
+         left: -15px;
          top: 50%;
          transform: translateY(-50%);
       }
@@ -174,6 +169,27 @@
          svg {
             fill: #ffffff;
          }
+      }
+   }
+   &__text {
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(64, 64, 66, 0.7);
+      margin-bottom: 10px;
+      padding-left: 30px;
+   }
+   &__date {
+      padding-left: 30px;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(64, 64, 66, 0.5);
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      svg {
+         margin-right: 7px;
+         flex-shrink: 0;
       }
    }
 }
@@ -253,6 +269,7 @@
 
 @media (min-width: 320px) and (max-width: 576px) {
    .info-row {
+      margin-top: 0;
       &__inner {
          padding: 20px;
          box-shadow: none;
@@ -297,6 +314,23 @@
          &:not(:last-child) {
             margin-bottom: 20px;
          }
+      }
+   }
+   .cart {
+      &.news {
+         height: 414px;
+      }
+      &__title {
+         font-size: 12px;
+         line-height: 16px;
+         margin: 15px 30px;
+         margin-left: 25px;
+      }
+      &__text {
+         padding: 0 15px;
+      }
+      &__date {
+         padding-left: 15px;
       }
    }
 }

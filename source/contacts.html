@@ -1,0 +1,66 @@
+@@include('_header.html',{})
+<!--Header-------------------END------------------------>
+<section class="top">
+  <div class="container">
+    <div class="top__inner">
+      <h1 class="top__title title">Новости</h1>
+    </div>
+  </div>
+</section>
+
+<section class="breadcrumb">
+  <div class="container">
+    <ul class="breadcrumb__list">
+      <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+      <li class="breadcrumb__item active"><a class="breadcrumb__link" href="#">Контакты</a></li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="contacts">
+  <div class="contacts__inner">
+    <h2 class="contacts__title title">Наши контакты</h2>
+    <div class="contacts__main-block">
+      <div class="contacts__form form">
+        <div class="form__title">Отправить сообщение</div>
+        <div class="custom-input__block">
+          <label class="custom-input__label active" for="name">Введите имя</label>
+          <input class="custom-input" id="name" type="text" value="John" />
+        </div>
+        <div class="custom-input__block">
+          <label class="custom-input__label" for="email">Введите E-mail</label>
+          <input class="custom-input" id="email" type="text" />
+        </div>
+        <div class="custom-input__block">
+          <label class="custom-input__label" for="text">Ваше сообщение</label>
+          <textarea class="custom-input" id="text" type="text" />
+          </div>
+          <button class="form__send-btn">Отправить</button>
+        </div>
+        <div class="contacts__info">
+          <p class="contacts__address"><svg width="15" height="20">
+            <use href="img/sprite/sprite.svg#contacts-address"></use>
+          </svg>Молдова, г. Кишинев, ул. Каля Ешилор 178/6</p>
+          <p class="contacts__tel"><svg width="20" height="20">
+              <use href="img/sprite/sprite.svg#contacts-tel"></use>
+            </svg>+(373) 60 555 555</p>
+          <p class="contacts__email"><svg width="20" height="20">
+              <use href="img/sprite/sprite.svg#contacts-email"></use>
+            </svg>hello@info.com.ng</p>
+          <div class="contacts__time"><svg width="20" height="20">
+              <use href="img/sprite/sprite.svg#contacts-clock"></use>
+            </svg><p> <span> Пн — Пт 9.00 - 18.00</span> <span>Сб — Вс Выходной</span></p></div>
+          <div class="contacts__map">
+            <picture>
+              <source type="image/webp" srcset="img/map.webp">
+              <img class="image" src="img/map.jpg" alt="map">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--Footer--------------------------------------------->
+@@include('_footer.html',{})

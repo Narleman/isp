@@ -31,17 +31,20 @@ $('.custom-input').on('focusout', function () {
 // -----------------  Слайдера --------------------
 
 
-var swiperMain = new Swiper('.swiper-container.main-slider', {
-  paginationClickable: true,
-  effect: 'coverflow',
+var swiperMain = new Swiper('.main-slider', {
   loop: true,
+  observer: true,
+  observeParents: true,
+  initialSlide: 0,
+  effect: 'coverflow',
+  grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
-    stretch: 0,
-    depth: 40,
-    modifier: 15,
+    stretch: 1100,
+    depth: 125,
+    modifier: 1,
     slideShadows: true,
   },
   navigation: {
@@ -54,7 +57,7 @@ var swiperMain = new Swiper('.swiper-container.main-slider', {
   },
 });
 
-var aboutUs = new Swiper('.swiper-container.about-us__slider', {
+var aboutUs = new Swiper('.about-us__slider', {
   paginationClickable: true,
   loop: true,
   centeredSlides: true,
@@ -70,7 +73,7 @@ var aboutUs = new Swiper('.swiper-container.about-us__slider', {
   },
 });
 
-var newsArticle = new Swiper('.swiper-container.news-article__slider', {
+var newsArticle = new Swiper('.news-article__slider', {
   paginationClickable: true,
   loop: true,
   centeredSlides: true,
@@ -89,7 +92,7 @@ var newsArticle = new Swiper('.swiper-container.news-article__slider', {
 
 
 
-var freshNews = new Swiper('.swiper-container.fresh-news__slider', {
+var freshNews = new Swiper('.fresh-news__slider', {
   paginationClickable: true,
   loop: true,
   centeredSlides: true,
@@ -144,7 +147,82 @@ var productSliderMain = new Swiper(".product__slider-main", {
   },
 });
 
-
+var availableSolutions = new Swiper(".available-solutions__slider", {
+  paginationClickable: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
+var tabsSliderNav = new Swiper(".tabs__slider-nav", {
+  loop: false,
+  centeredSlides: false,
+  slidesPerView: 10,
+  spaceBetween: 10,
+  direction: "vertical",
+  breakpoints: {
+    320: {
+      direction: "horizontal",
+      slidesPerView: 2,
+      centeredSlides: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    },
+    767: {
+      direction: "horizontal",
+      centeredSlides: false,
+      slidesPerView: 5,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    },
+    1023: {
+      direction: "horizontal",
+      centeredSlides: false,
+      slidesPerView: 10,
+    },
+    // when window width is >= 640px
+    1025: {
+      direction: "horizontal",
+      slidesPerView: 10,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    },
+    1325: {
+      direction: "vertical",
+    }
+  }
+});
+var tabsSlider = new Swiper(".tabs__slider", {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  observeParents: true,
+  observeSlideChildren: true,
+  observer: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+});
 
 // -----------------  Селект  --------------------
 

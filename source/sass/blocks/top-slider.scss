@@ -3,17 +3,19 @@
    }
 }
 .main-slider {
-   width: 100%;
+   width: 1398px;
    height: 699px;
 
    .swiper-slide {
       width: 1218px;
       height: 451px;
       margin: auto 0;
+      filter: brightness(0.75);
    }
    .swiper-slide-active {
       width: 1218px;
       height: 451px;
+      filter: brightness(1);
    }
 }
 

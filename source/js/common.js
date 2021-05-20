@@ -55,6 +55,16 @@ var swiperMain = new Swiper('.main-slider', {
     el: '.swiper-pagination',
     type: 'bullets',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      effect: 'fade',
+    },
+    // when window width is >= 640px
+    1440: {
+      slidesPerView: 'auto',
+    }
+  }
 });
 
 var aboutUs = new Swiper('.about-us__slider', {
@@ -222,6 +232,29 @@ var tabsSlider = new Swiper(".tabs__slider", {
     el: '.swiper-pagination',
     type: 'bullets',
   },
+});
+var productsSlider = new Swiper(".products2__slider", {
+  loop: false,
+  centeredSlides: false,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  observeParents: true,
+  observeSlideChildren: true,
+  observer: true,
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+      slidesPerView: 1.6,
+    },
+    577: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    788: {
+      spaceBetween: 20,
+    }
+  }
 });
 
 // -----------------  Селект  --------------------

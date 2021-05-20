@@ -35,10 +35,10 @@
 }
 
 .contacts {
-   margin-bottom: 100px;
    width: 100%;
    max-width: 1218px;
    margin: 0 auto;
+   margin-bottom: 100px;
    &__inner {
       background-color: #f5f6fa;
       padding: 53px 157px;
@@ -127,8 +127,6 @@
          flex-shrink: 0;
       }
    }
-   &__map {
-   }
 
    .form {
       &__title {
@@ -170,117 +168,60 @@
       &__inner {
          padding: 60px;
       }
-
-      &__title {
-      }
-
-      &__main-block {
-      }
-
-      &__form {
-      }
-
-      &__info {
-      }
-      &__tel {
-      }
-      &__address {
-      }
-      &__email {
-      }
       &__time {
          span {
             &:not(:last-child) {
                margin-bottom: 5px;
             }
          }
-         svg {
-         }
-      }
-      &__map {
       }
 
       .form {
-         &__title {
-         }
-
-         &__send-btn {
-         }
          .custom-input {
             &__block {
                &:not(:last-child) {
                   margin-bottom: 24px;
                }
             }
-         }
-         textarea {
          }
       }
    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
    .contacts {
-      margin-bottom: 100px;
+      margin-bottom: 70px;
       &__inner {
          padding: 40px 20px;
-      }
-
-      &__title {
-      }
-
-      &__main-block {
       }
 
       &__form {
          max-width: 354px;
       }
 
-      &__info {
-      }
-      &__tel {
-      }
-      &__address {
-      }
-      &__email {
-      }
       &__time {
          span {
             &:not(:last-child) {
                margin-bottom: 5px;
             }
          }
-         svg {
-         }
-      }
-      &__map {
       }
 
       .form {
-         &__title {
-         }
-
-         &__send-btn {
-         }
          .custom-input {
             &__block {
                &:not(:last-child) {
                   margin-bottom: 24px;
                }
             }
-         }
-         textarea {
          }
       }
    }
 }
 @media (min-width: 577px) and (max-width: 767px) {
    .contacts {
-      margin-bottom: 100px;
+      margin-bottom: 60px;
       &__inner {
          padding: 30px 16px;
-      }
-
-      &__title {
       }
 
       &__main-block {
@@ -292,22 +233,11 @@
          margin-right: 0;
          margin-bottom: 60px;
       }
-
-      &__info {
-      }
-      &__tel {
-      }
-      &__address {
-      }
-      &__email {
-      }
       &__time {
          span {
             &:not(:last-child) {
                margin-bottom: 5px;
             }
-         }
-         svg {
          }
       }
       &__map {
@@ -318,31 +248,21 @@
       }
 
       .form {
-         &__title {
-         }
-
-         &__send-btn {
-         }
          .custom-input {
             &__block {
                &:not(:last-child) {
                   margin-bottom: 24px;
                }
             }
-         }
-         textarea {
          }
       }
    }
 }
 @media (min-width: 320px) and (max-width: 576px) {
    .contacts {
-      margin-bottom: 100px;
+      margin-bottom: 60px;
       &__inner {
          padding: 30px 16px;
-      }
-
-      &__title {
       }
 
       &__main-block {
@@ -352,24 +272,14 @@
       &__form {
          max-width: 354px;
          margin-right: 0;
-         margin-bottom: 60px;
+         margin-bottom: 40px;
       }
 
-      &__info {
-      }
-      &__tel {
-      }
-      &__address {
-      }
-      &__email {
-      }
       &__time {
          span {
             &:not(:last-child) {
                margin-bottom: 5px;
             }
-         }
-         svg {
          }
       }
       &__map {
@@ -380,19 +290,12 @@
       }
 
       .form {
-         &__title {
-         }
-
-         &__send-btn {
-         }
          .custom-input {
             &__block {
                &:not(:last-child) {
                   margin-bottom: 24px;
                }
             }
-         }
-         textarea {
          }
       }
    }

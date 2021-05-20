@@ -56,9 +56,6 @@
       margin-bottom: 11px;
    }
 
-   &__links-list {
-   }
-
    &__links-item {
       display: flex;
       flex-direction: column;
@@ -92,72 +89,26 @@
       line-height: 19px;
    }
 
-   &__link-address {
-   }
-
    &__link-time {
+      svg {
+         align-self: flex-start;
+      }
    }
 }
 
 @media (min-width: 1024px) and (max-width: 1325px) {
    .footer {
-      &__inner {
-      }
-      &__column {
-      }
-
-      &__list {
-      }
-
       &__item {
          &:nth-child(2) {
             display: none;
          }
       }
-
-      &__logo {
-      }
-
-      &__copyrights {
-      }
-
-      &__developer {
-      }
-
-      &__main-link {
-      }
-
-      &__links-list {
-      }
-
-      &__links-item {
-      }
-
-      &__link {
-      }
-
-      &__link-tel {
-      }
-
-      &__link-email {
-      }
-
-      &__link-address {
-      }
-
-      &__link-time {
-      }
    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
    .footer {
-      &__inner {
-      }
       &__column {
          margin-right: 80px;
-      }
-
-      &__list {
       }
 
       &__item {
@@ -167,39 +118,6 @@
          &:nth-child(3) {
             display: none;
          }
-      }
-
-      &__logo {
-      }
-
-      &__copyrights {
-      }
-
-      &__developer {
-      }
-
-      &__main-link {
-      }
-
-      &__links-list {
-      }
-
-      &__links-item {
-      }
-
-      &__link {
-      }
-
-      &__link-tel {
-      }
-
-      &__link-email {
-      }
-
-      &__link-address {
-      }
-
-      &__link-time {
       }
    }
 }
@@ -211,10 +129,6 @@
       &__column {
          margin: 0;
       }
-
-      &__list {
-      }
-
       &__item {
          &:nth-child(1) {
             display: none;
@@ -228,9 +142,6 @@
          &:nth-child(3) {
             display: none;
          }
-      }
-
-      &__logo {
       }
 
       &__copyrights {
@@ -250,30 +161,6 @@
             display: flex;
          }
       }
-
-      &__main-link {
-      }
-
-      &__links-list {
-      }
-
-      &__links-item {
-      }
-
-      &__link {
-      }
-
-      &__link-tel {
-      }
-
-      &__link-email {
-      }
-
-      &__link-address {
-      }
-
-      &__link-time {
-      }
    }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -283,9 +170,6 @@
       }
       &__column {
          margin: 0;
-      }
-
-      &__list {
       }
 
       &__item {
@@ -324,30 +208,6 @@
          .footer__developer {
             display: flex;
          }
-      }
-
-      &__main-link {
-      }
-
-      &__links-list {
-      }
-
-      &__links-item {
-      }
-
-      &__link {
-      }
-
-      &__link-tel {
-      }
-
-      &__link-email {
-      }
-
-      &__link-address {
-      }
-
-      &__link-time {
       }
    }
 }

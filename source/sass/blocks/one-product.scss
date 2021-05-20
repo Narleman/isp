@@ -87,9 +87,6 @@
       font-size: 16px;
       line-height: 20px;
    }
-
-   &__bottom {
-   }
 }
 
 .tabs {
@@ -217,56 +214,6 @@
          width: 94px;
          height: 363px;
          margin-right: 10px !important;
-
-         .swiper-slide {
-         }
-      }
-
-      &__info {
-      }
-
-      &__name {
-      }
-
-      &__code {
-      }
-
-      &__text {
-      }
-
-      &__check-price {
-      }
-
-      &__bottom {
-      }
-   }
-
-   .tabs {
-      &__nav {
-      }
-
-      &__link {
-      }
-
-      &__content {
-      }
-
-      &__pane {
-         &_show {
-         }
-      }
-   }
-   .characteristics {
-      &__list {
-      }
-
-      &__item {
-      }
-
-      &__name {
-      }
-
-      &__value {
       }
    }
 }
@@ -314,32 +261,15 @@
          line-height: 23px;
       }
 
-      &__code {
-      }
-
       &__text {
          font-size: 14px;
          line-height: 22px;
-      }
-
-      &__check-price {
-      }
-
-      &__bottom {
       }
    }
 
    .tabs {
       margin: 0 -16px;
       padding: 35px 14px;
-      &__nav {
-      }
-
-      &__link {
-      }
-
-      &__content {
-      }
 
       &__pane {
          &_show {
@@ -352,15 +282,6 @@
          &:not(:last-child) {
             margin-bottom: 20px;
          }
-      }
-
-      &__item {
-      }
-
-      &__name {
-      }
-
-      &__value {
       }
    }
 }
@@ -411,9 +332,6 @@
          line-height: 23px;
       }
 
-      &__code {
-      }
-
       &__text {
          font-size: 14px;
          line-height: 22px;
@@ -423,22 +341,11 @@
       &__check-price {
          width: 100%;
       }
-
-      &__bottom {
-      }
    }
 
    .tabs {
       margin: 0 -16px;
       padding: 35px 14px;
-      &__nav {
-      }
-
-      &__link {
-      }
-
-      &__content {
-      }
 
       &__pane {
          &_show {
@@ -517,9 +424,6 @@
          line-height: 23px;
       }
 
-      &__code {
-      }
-
       &__text {
          font-size: 14px;
          line-height: 22px;
@@ -529,22 +433,11 @@
       &__check-price {
          width: 100%;
       }
-
-      &__bottom {
-      }
    }
 
    .tabs {
       margin: 0 -16px;
       padding: 35px 14px;
-      &__nav {
-      }
-
-      &__link {
-      }
-
-      &__content {
-      }
 
       &__pane {
          &_show {

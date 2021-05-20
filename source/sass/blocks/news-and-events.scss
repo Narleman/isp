@@ -119,37 +119,13 @@
          }
       }
    }
-
-   &__right {
-   }
 }
 
 @media (min-width: 1024px) and (max-width: 1325px) {
    .news-and-events {
-      &__inner {
-      }
-
-      &__left {
-      }
-
-      &__top {
-      }
-
-      &__title {
-      }
-
-      &__all-link {
-      }
-
-      &__list {
-      }
-
-      &__item {
-      }
-
       &__image {
          width: 129px;
-         height: 122px;
+         height: 100%;
          img {
             object-fit: cover;
          }
@@ -160,28 +136,12 @@
       &__item-title {
          font-size: 14px;
       }
-
-      &__item-subtitle {
-      }
-
-      &__item-bottom {
-      }
-
-      &__date {
-      }
-
-      &__read {
-      }
-      &__link {
-      }
-
-      &__right {
-      }
    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
    .news-and-events {
       &__inner {
+         padding-top: 50px;
          flex-direction: column;
       }
 
@@ -189,15 +149,6 @@
          max-width: 100%;
          margin-right: 0;
          margin-bottom: 40px;
-      }
-
-      &__top {
-      }
-
-      &__title {
-      }
-
-      &__all-link {
       }
 
       &__list {
@@ -228,24 +179,9 @@
       &__item-title {
          font-size: 14px;
       }
-
-      &__item-subtitle {
-      }
-
-      &__item-bottom {
-      }
-
-      &__date {
-      }
-
-      &__read {
-      }
       &__link {
          display: flex;
          flex-direction: column;
-      }
-
-      &__right {
       }
    }
 }
@@ -259,15 +195,6 @@
          max-width: 100%;
          margin-right: 0;
          margin-bottom: 40px;
-      }
-
-      &__top {
-      }
-
-      &__title {
-      }
-
-      &__all-link {
       }
 
       &__list {
@@ -295,29 +222,16 @@
          font-size: 14px;
       }
 
-      &__item-subtitle {
-      }
-
-      &__item-bottom {
-      }
-
-      &__date {
-      }
-
-      &__read {
-      }
       &__link {
          display: flex;
          flex-direction: column;
-      }
-
-      &__right {
       }
    }
 }
 @media (min-width: 320px) and (max-width: 576px) {
    .news-and-events {
       &__inner {
+         padding-top: 40px;
          flex-direction: column;
       }
 
@@ -325,15 +239,6 @@
          max-width: 100%;
          margin-right: 0;
          margin-bottom: 40px;
-      }
-
-      &__top {
-      }
-
-      &__title {
-      }
-
-      &__all-link {
       }
 
       &__list {
@@ -364,23 +269,9 @@
          font-size: 12px;
       }
 
-      &__item-subtitle {
-      }
-
-      &__item-bottom {
-      }
-
-      &__date {
-      }
-
-      &__read {
-      }
       &__link {
          display: flex;
          flex-direction: column;
-      }
-
-      &__right {
       }
    }
 }

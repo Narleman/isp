@@ -512,6 +512,8 @@
          margin: 0 30px 15px 30px;
       }
       .cart__item {
+         font-size: 14px;
+         line-height: 22px;
          &::before {
             content: "";
             display: none;

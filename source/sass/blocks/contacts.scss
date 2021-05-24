@@ -196,9 +196,11 @@
 
       &__form {
          max-width: 354px;
+         margin-right: 20px;
       }
 
       &__time {
+         margin-bottom: 18px;
          span {
             &:not(:last-child) {
                margin-bottom: 5px;
@@ -214,6 +216,9 @@
                }
             }
          }
+      }
+      &__map {
+         height: 155px;
       }
    }
 }

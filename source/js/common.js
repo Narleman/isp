@@ -54,6 +54,7 @@ var swiperMain = new Swiper('.main-slider', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
   breakpoints: {
     320: {
@@ -194,7 +195,7 @@ var tabsSliderNav = new Swiper(".tabs__slider-nav", {
       slidesPerView: 5,
       scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
+        hide: false,
       },
     },
     1023: {
@@ -249,6 +250,10 @@ var productsSlider = new Swiper(".products2__slider", {
     577: {
       spaceBetween: 20,
       slidesPerView: 3,
+    },
+    767: {
+      spaceBetween: 20,
+      slidesPerView: 4,
     },
     // when window width is >= 640px
     788: {

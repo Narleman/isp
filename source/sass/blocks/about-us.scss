@@ -123,8 +123,19 @@
    }
 }
 
+.about-us--mb {
+   a {
+      display: none;
+   }
+}
+
 ///////////Media
 @media (min-width: 1024px) and (max-width: 1325px) {
+   .about-us--mb {
+      a {
+         display: flex;
+      }
+   }
    .about-us {
       &__inner {
          padding-top: 50px;
@@ -144,6 +155,11 @@
    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+   .about-us--mb {
+      a {
+         display: flex;
+      }
+   }
    .about-us {
       &__inner {
          padding-top: 50px;
@@ -171,6 +187,11 @@
    }
 }
 @media (min-width: 577px) and (max-width: 767px) {
+   .about-us--mb {
+      a {
+         display: flex;
+      }
+   }
    h2.title {
       font-size: 20px;
       line-height: 25px;
@@ -216,6 +237,11 @@
    }
 }
 @media (min-width: 320px) and (max-width: 576px) {
+   .about-us--mb {
+      a {
+         display: flex;
+      }
+   }
    h2.title {
       font-size: 20px;
       line-height: 25px;
